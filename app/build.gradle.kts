@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id ("kotlin-kapt")
 }
 
 android {
@@ -56,4 +57,25 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //Navigation
+    implementation("androidx.navigation:navigation-runtime-ktx:2.9.2")
+    implementation("androidx.navigation:navigation-compose:2.9.2")
+    //LOTTIE ANIMATION
+    implementation("com.airbnb.android:lottie-compose:4.2.0")
+
+    //Room Database
+    implementation("androidx.room:room-runtime:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    //End
+
+    // Image Loading (Coil for Jetpack Compose)
+    implementation ("io.coil-kt:coil-compose:2.4.0")
+
+    //Livedata
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.7")
+
+
+
 }

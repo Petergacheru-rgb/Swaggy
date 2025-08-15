@@ -28,12 +28,15 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.peter.swaggy.R
+import com.peter.swaggy.navigation.ROUT_ITEM
 import com.peter.swaggy.ui.theme.light
 
 
 @Composable
-fun HomeScreen(){
+fun HomeScreen(navController: NavController){
     Column(
         modifier=Modifier.fillMaxSize().background(color = light),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -74,7 +77,9 @@ fun HomeScreen(){
 
         Spacer(modifier = Modifier.height(5.dp))
         Button(
-            onClick = {},
+            onClick = {
+                navController.navigate(ROUT_ITEM)
+            },
             colors = ButtonDefaults.buttonColors(Color.Black),
             shape = RoundedCornerShape(10.dp),
             modifier = Modifier.fillMaxWidth().padding(start = 30.dp, end = 30.dp)
@@ -91,5 +96,5 @@ fun HomeScreen(){
 @Preview(showBackground = true)
 @Composable
 fun  HomeScreenPreview(){
-    HomeScreen()
+    HomeScreen(rememberNavController())
 }
