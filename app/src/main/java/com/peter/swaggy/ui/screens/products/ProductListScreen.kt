@@ -45,8 +45,6 @@ import com.peter.swaggy.navigation.ROUT_EDIT_PRODUCT
 import com.peter.swaggy.navigation.ROUT_PRODUCT_LIST
 import com.peter.swaggy.navigation.editProductRoute
 import com.peter.swaggy.viewmodel.ProductViewModel
-import java.io.File
-import java.io.FileOutputStream
 import java.io.IOException
 import java.io.OutputStream
 

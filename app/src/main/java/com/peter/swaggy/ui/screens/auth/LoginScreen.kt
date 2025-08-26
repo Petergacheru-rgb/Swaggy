@@ -1,20 +1,13 @@
 package com.peter.swaggy.ui.screens.auth
 
 import android.widget.Toast
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.core.tween
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowForward
-import androidx.compose.material.icons.filled.Email
-import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -22,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -31,9 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.peter.swaggy.R
-import com.peter.swaggy.navigation.ROUTE_DASHBOARD2
 import com.peter.swaggy.navigation.ROUT_ADD_PRODUCT
-import com.peter.swaggy.navigation.ROUT_HOME
 import com.peter.swaggy.navigation.ROUT_PRODUCT_LIST
 import com.peter.swaggy.navigation.ROUT_REGISTER
 import com.peter.swaggy.viewmodel.AuthViewModel
@@ -181,7 +171,7 @@ fun LoginScreen(
                     Text("Sign up instead", color = Color.White)
                     Spacer(modifier = Modifier.width(4.dp))
                     Icon(
-                        Icons.Filled.ArrowForward,
+                        Icons.Filled.ArrowBack,
                         contentDescription = "Sign up",
                         tint = Color.White,
                         modifier = Modifier.size(16.dp)

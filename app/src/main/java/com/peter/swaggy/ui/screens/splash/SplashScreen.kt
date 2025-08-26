@@ -1,7 +1,6 @@
 package com.peter.swaggy.ui.screens.splash
 
 import android.annotation.SuppressLint
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
@@ -22,7 +21,6 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.peter.swaggy.R
-import com.peter.swaggy.navigation.ROUT_HOME
 import com.peter.swaggy.navigation.ROUT_LOGIN
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -45,7 +43,6 @@ fun SplashScreen(navController: NavController) {
         verticalArrangement = Arrangement.Center
 
     ) {
-
 
 //Lottie Animation
         val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.online_splash))
@@ -72,7 +69,6 @@ fun SplashScreen(navController: NavController) {
             textAlign = TextAlign.Center
         )
         Spacer(modifier = Modifier.height(10.dp))
-
 
         CircularProgressIndicator(
             color = Color.Blue

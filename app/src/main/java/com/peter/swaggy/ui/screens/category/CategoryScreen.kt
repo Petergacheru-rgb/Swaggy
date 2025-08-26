@@ -13,9 +13,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Share
-import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -31,7 +29,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -40,9 +37,7 @@ import androidx.navigation.compose.rememberNavController
 import com.peter.swaggy.R
 import com.peter.swaggy.navigation.ROUTE_DETAIL
 import com.peter.swaggy.ui.theme.Orange
-import com.peter.swaggy.ui.theme.newBlue
-import java.nio.file.WatchEvent.Modifier
-import java.util.Locale.Category
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

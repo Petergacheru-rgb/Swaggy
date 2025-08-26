@@ -1,6 +1,6 @@
 package com.peter.swaggy.ui.screens.detail
 
-import android.R.attr.text
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Column
